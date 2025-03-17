@@ -55,7 +55,7 @@ export default function AgeDisplay({ birthDate, currentTime }: AgeDisplayProps) 
       >
         <Card className="hover:shadow-lg transition-shadow duration-300 dark:bg-slate-900/50">
           <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
-            <CardTitle className="text-sm font-medium">📊 Age Statistics</CardTitle>
+            <CardTitle className="text-sm md:text-base font-medium">📊 Age Statistics</CardTitle>
             <motion.div
               initial={{ rotate: 0 }}
               animate={{ rotate: [0, 5, -5, 0] }}
@@ -72,24 +72,24 @@ export default function AgeDisplay({ birthDate, currentTime }: AgeDisplayProps) 
               transition={{ staggerChildren: 0.2 }}
             >
               <motion.div variants={statVariants}>
-                <div className="text-2xl font-bold bg-gradient-to-r from-indigo-600 to-purple-600 dark:from-indigo-400 dark:to-purple-400 bg-clip-text text-transparent">
+                <div className="text-xl md:text-2xl font-bold bg-gradient-to-r from-indigo-600 to-purple-600 dark:from-indigo-400 dark:to-purple-400 bg-clip-text text-transparent">
                   {years} years 🎈
                 </div>
-                <p className="text-xs text-slate-600 dark:text-slate-300">Current Age</p>
+                <p className="text-xs md:text-sm text-slate-600 dark:text-slate-300">Current Age</p>
               </motion.div>
 
               <motion.div variants={statVariants}>
-                <div className="text-2xl font-bold bg-gradient-to-r from-indigo-500 to-purple-500 dark:from-indigo-300 dark:to-purple-300 bg-clip-text text-transparent">
+                <div className="text-xl md:text-2xl font-bold bg-gradient-to-r from-indigo-500 to-purple-500 dark:from-indigo-300 dark:to-purple-300 bg-clip-text text-transparent">
                   {days} days ⏳
                 </div>
-                <p className="text-xs text-slate-600 dark:text-slate-300">Days Since Birth</p>
+                <p className="text-xs md:text-sm text-slate-600 dark:text-slate-300">Days Since Birth</p>
               </motion.div>
 
               <motion.div variants={statVariants}>
-                <div className="text-2xl font-bold bg-gradient-to-r from-indigo-400 to-purple-400 dark:from-indigo-200 dark:to-purple-200 bg-clip-text text-transparent">
+                <div className="text-xl md:text-2xl font-bold bg-gradient-to-r from-indigo-400 to-purple-400 dark:from-indigo-200 dark:to-purple-200 bg-clip-text text-transparent">
                   {monthsToNextBirthday} months 🎂
                 </div>
-                <p className="text-xs text-slate-600 dark:text-slate-300">Until Next Birthday</p>
+                <p className="text-xs md:text-sm text-slate-600 dark:text-slate-300">Until Next Birthday</p>
               </motion.div>
 
               <motion.div
@@ -103,19 +103,19 @@ export default function AgeDisplay({ birthDate, currentTime }: AgeDisplayProps) 
                       <div className="text-xl font-bold bg-gradient-to-r from-indigo-300 to-purple-300 dark:from-indigo-100 dark:to-purple-100 bg-clip-text text-transparent">
                         {yearsTo35}y
                       </div>
-                      <p className="text-xs text-slate-600 dark:text-slate-300">Years</p>
+                      <p className="text-xs md:text-sm text-slate-600 dark:text-slate-300">Years</p>
                     </div>
                     <div>
                       <div className="text-xl font-bold bg-gradient-to-r from-indigo-200 to-purple-200 dark:from-indigo-50 dark:to-purple-50 bg-clip-text text-transparent">
                         {monthsTo35}m
                       </div>
-                      <p className="text-xs text-slate-600 dark:text-slate-300">Months</p>
+                      <p className="text-xs md:text-sm text-slate-600 dark:text-slate-300">Months</p>
                     </div>
                     <div>
                       <div className="text-xl font-bold bg-gradient-to-r from-indigo-100 to-purple-100 dark:from-indigo-50 dark:to-purple-50 bg-clip-text text-transparent">
                         {daysTo35}d
                       </div>
-                      <p className="text-xs text-slate-600 dark:text-slate-300">Days</p>
+                      <p className="text-xs md:text-sm text-slate-600 dark:text-slate-300">Days</p>
                     </div>
                   </div>
                 </div>
