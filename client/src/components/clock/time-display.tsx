@@ -29,11 +29,11 @@ export default function TimeDisplay({ currentTime }: TimeDisplayProps) {
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.3 }}
-            className="text-2xl font-bold bg-gradient-to-r from-primary to-primary/80 bg-clip-text text-transparent"
+            className="text-2xl font-bold bg-gradient-to-r from-indigo-600 to-purple-600 dark:from-indigo-400 dark:to-purple-400 bg-clip-text text-transparent"
           >
             {format(currentTime, "HH:mm:ss")}
           </motion.div>
-          <p className="text-xs text-muted-foreground mt-2">
+          <p className="text-xs text-slate-600 dark:text-slate-300 mt-2">
             📅 {format(currentTime, "EEEE, MMMM do yyyy")}
           </p>
         </CardContent>
