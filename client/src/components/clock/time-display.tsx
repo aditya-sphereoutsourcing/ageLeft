@@ -13,9 +13,9 @@ export default function TimeDisplay({ currentTime }: TimeDisplayProps) {
       whileHover={{ scale: 1.02 }}
       transition={{ type: "spring", stiffness: 300 }}
     >
-      <Card className="hover:shadow-lg transition-shadow duration-300">
+      <Card className="hover:shadow-lg transition-shadow duration-300 dark:bg-slate-900/50">
         <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
-          <CardTitle className="text-sm font-medium">Current Time</CardTitle>
+          <CardTitle className="text-sm font-medium">⌚ Current Time</CardTitle>
           <motion.div
             animate={{ rotate: 360 }}
             transition={{ duration: 2, repeat: Infinity, ease: "linear" }}
@@ -34,7 +34,7 @@ export default function TimeDisplay({ currentTime }: TimeDisplayProps) {
             {format(currentTime, "HH:mm:ss")}
           </motion.div>
           <p className="text-xs text-muted-foreground mt-2">
-            {format(currentTime, "EEEE, MMMM do yyyy")}
+            📅 {format(currentTime, "EEEE, MMMM do yyyy")}
           </p>
         </CardContent>
       </Card>

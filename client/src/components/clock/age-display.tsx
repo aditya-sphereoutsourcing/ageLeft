@@ -32,9 +32,9 @@ export default function AgeDisplay({ birthDate, currentTime }: AgeDisplayProps) 
       whileHover={{ scale: 1.02 }}
       transition={{ type: "spring", stiffness: 300 }}
     >
-      <Card className="hover:shadow-lg transition-shadow duration-300">
+      <Card className="hover:shadow-lg transition-shadow duration-300 dark:bg-slate-900/50">
         <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
-          <CardTitle className="text-sm font-medium">Age Statistics</CardTitle>
+          <CardTitle className="text-sm font-medium">📊 Age Statistics</CardTitle>
           <motion.div
             initial={{ rotate: 0 }}
             animate={{ rotate: [0, 5, -5, 0] }}
@@ -52,21 +52,21 @@ export default function AgeDisplay({ birthDate, currentTime }: AgeDisplayProps) 
           >
             <motion.div variants={statVariants}>
               <div className="text-2xl font-bold bg-gradient-to-r from-primary to-primary/80 bg-clip-text text-transparent">
-                {years} years
+                {years} years 🎈
               </div>
               <p className="text-xs text-muted-foreground">Current Age</p>
             </motion.div>
 
             <motion.div variants={statVariants}>
               <div className="text-2xl font-bold bg-gradient-to-r from-primary/90 to-primary/70 bg-clip-text text-transparent">
-                {days} days
+                {days} days ⏳
               </div>
               <p className="text-xs text-muted-foreground">Days Since Birth</p>
             </motion.div>
 
             <motion.div variants={statVariants}>
               <div className="text-2xl font-bold bg-gradient-to-r from-primary/80 to-primary/60 bg-clip-text text-transparent">
-                {monthsToNextBirthday} months
+                {monthsToNextBirthday} months 🎂
               </div>
               <p className="text-xs text-muted-foreground">Until Next Birthday</p>
             </motion.div>
@@ -76,7 +76,7 @@ export default function AgeDisplay({ birthDate, currentTime }: AgeDisplayProps) 
               className="pt-2 border-t border-border"
             >
               <div className="space-y-2">
-                <div className="text-sm font-semibold text-muted-foreground">Time until 35</div>
+                <div className="text-sm font-semibold text-muted-foreground">🎯 Time until 35</div>
                 <div className="grid grid-cols-3 gap-2">
                   <div>
                     <div className="text-xl font-bold bg-gradient-to-r from-primary/70 to-primary/50 bg-clip-text text-transparent">
