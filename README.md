@@ -64,7 +64,7 @@ npm run build
 
 ## 🌐 Live Demo
 
-Visit the live application: [Time Dashboard](https://your-dashboard-url.netlify.app)
+Visit the live application: [Time Dashboard](https://ageleftaditya.netlify.app/)
 
 ## 👨‍💻 About the Developer
 
